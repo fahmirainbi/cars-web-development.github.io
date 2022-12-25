@@ -1,0 +1,295 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <script src="script.js"></script>
+  <script src="jquery.js"></script>
+  </head>
+  <body>
+    <!-- nav start -->
+    <nav>
+      <div class="logo">
+        <a href="#">
+          <img src="asset/Logo.png" alt="" />
+        </a>
+      </div>
+      <ul>
+        <li><a href="#">Model</a></li>
+        <li><a href="simulasi-kredit.html">Simulasi Kredit</a></li>
+        <li><a href="#">Booking Service</a></li>
+        <li><a href="#">Trade In</a></li>
+        <li><a href="#">Simulasi Asuransi</a></li>
+      </ul>
+
+      <div class="menu-toggle">
+        <input type="checkbox" name="" id="" />
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+    <!-- nav end -->
+
+    <!-- form start  -->
+    <div class="form">
+      <div class="tittle-form">
+        <img src="asset/icon-asuransi.png" alt="" class="form-img" />
+        <h1>SIMULASI ASURANSI</h1>
+      </div>
+      <div class="subtittle-form">
+        <p>
+          Silahkan isi form di bawah ini untuk mengetahui simulasi asuransi pembelian mobil Honda Anda. 
+          Sales consultant Honda akan menghubungi Anda untuk membantu lebih lanjut.
+        </p>
+      </div>
+      <div class="tittle-content-form">
+        <h2>Nama<span>*</span></h2>
+      </div>
+      <div class="content-form">
+        <input
+          type="text"
+          name=""
+          id=""
+          class="form-input"
+          placeholder="Masukan Nama Anda"
+        />
+      </div>
+
+      <div class="tittle-content-form">
+        <h2>No. WA/ Telepon<span>*</span></h2>
+      </div>
+      <div class="content-form">
+        <input
+          type="text"
+          name=""
+          id=""
+          class="form-input"
+          placeholder="Masukan Nama Anda"
+        />
+      </div>
+
+      <div class="tittle-content-form">
+        <h2>Tipe Mobil<span>*</span></h2>
+      </div>
+      <div class="content-form">
+        <div class="dropdown-menu">
+          <input type="radio" name="sortType" id="menu1">
+          <label for="menu1">Honda HR-V</label>
+          
+          <input type="radio" name="sortType" id="menu2">
+          <label for="menu2">Honda WR-V</label>
+        
+          <input type="radio" name="sortType" id="menu3">
+          <label for="menu3">Honda CR-V</label>
+          
+          <input type="radio" name="sortType" id="menu4">
+          <label for="menu4">Honda BR-V</label>
+        
+          <input type="radio" name="sortType" id="menu5">
+          <label for="menu5">Honda City</label>
+          
+          <input type="radio" name="sortType" id="menu6">
+          <label for="menu6">Honda City Hatchback</label>
+        
+          <input type="radio" name="sortType" id="menu7">
+          <label for="menu7">Honda Accord</label>
+          
+          <input type="radio" name="sortType" id="menu8">
+          <label for="menu8">Honda Brio</label>
+        
+          <input type="radio" name="sortType" id="menu9">
+          <label for="menu9">Honda Civic</label>
+          
+          <input type="radio" name="sortType" id="menu10">
+          <label for="menu10">Honda Mobilio</label>
+        </div>
+        <script>
+          $('.dropdown-menu').click(function(e){
+            e.preventDefault();
+            e.stopPropagation();
+            $(this).toggleClass('expan');
+            $("#" + $(e.target).attr('for')).prop('checked',true)
+          })
+
+          $(document).click(function(){
+            $('.dropdown-menu').removeClass('expan')
+          })
+        </script>
+        </div>
+      </div>
+
+      
+      <div class="tittle-content-form">
+        <h2>Merk Mobil<span>*</span></h2>
+      </div>
+      <div class="content-form">
+        <input
+        type="text"
+        name=""
+        id=""
+        class="form-input"
+        placeholder="Masukan Nama Anda"
+        />
+        <p>Honda, Toyota, Suzuki, Mitsubishi, Mazda, Daihatsu, BMW dll.</p>
+      </div>
+      
+      <div class="tittle-content-form">
+        <h2>Tahun<span>*</span></h2>
+      </div>
+      <div class="content-form">
+        <input
+        type="text"
+        name=""
+        id=""
+        class="form-input"
+        placeholder="Masukan Nama Anda"
+        />
+      </div>
+      
+      <div class="tittle-content-form">
+        <h2>Mobil yang diminati<span>*</span></h2>
+      </div>
+      <div class="content-form">
+        <input
+        type="text"
+        name=""
+        id=""
+        class="form-input"
+        placeholder="Masukan Nama Anda"
+        />
+      </div>
+      
+      <div class="tittle-content-form">
+        <h2>Tenor<span>*</span></h2>
+      </div>
+      <div class="content-form-checkbox">
+        <table>
+          <tr>
+            <td>
+              <p><input type="checkbox" class="form-checkbox" />1 Tahun</p>
+            </td>
+            <td>
+              <p><input type="checkbox" class="form-checkbox" />2 Tahun</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><input type="checkbox" class="form-checkbox" />3 Tahun</p>
+            </td>
+            <td>
+              <p><input type="checkbox" class="form-checkbox" />4 Tahun</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><input type="checkbox" class="form-checkbox" />5 Tahun</p>
+            </td>
+          </tr>
+        </table>
+
+      </div>
+      <div class="privacy-policy">
+      <a href="kebijakan.html"><h3>Privacy Policy</h3></a>
+      <p><input type="checkbox">Saya telah membaca dan menyetujui Aturan Penggunaan dan Kebijakan 
+        Privasi honda-indonesia.com</p>
+      </div>
+
+      <div class="button">
+        <button type="button" class="hitung">Hitung Sekarang</button>
+      </div>
+    </div>
+    <!-- form end -->
+
+    <!-- footer Start -->
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-left">
+          <a href="#">
+            <img src="asset/Profil.png" alt="" class="image-profile" />
+          </a>
+          <div class="footer-conten">
+            <h3>Follow Us :</h3>
+            <div class="medsos">
+              <a href="#"><img src="asset/facebook.png" alt="" /></a>
+              <a href="#"><img src="asset/instagram.png" alt="" /></a>
+              <a href="#"><img src="asset/whatsapp.png" alt="" /></a>
+            </div>
+            <br />
+            <span
+              >Kami siap membantu dengan profesionalitas dan layanan terbaik
+              memenuhi kebutuhan Anda untuk mendapatkan kendaraan impian Anda.
+              Website ini dikelola oleh M Dehan Syahril Selaku Sales Consultan
+              Profesional Honda IBRM Bandung</span
+            >
+            <br />
+            <br />
+            <h3>M Dehan Syahril</h3>
+            <p>dehansyahril04@gmail.com</p>
+            <p>Honda Bandung Center (IBRM)</p>
+            <p>Jl. Cicendo No. 18 Kota Bandung 40117</p>
+            <p>www.honda-dehan.com</p>
+          </div>
+        </div>
+
+        <div class="footer-center">
+          <h3>Layanan Kami</h3>
+          <table>
+            <tr>
+              <td><img src="asset/arrow.png" alt="" /></td>
+              <td>
+                <a href="#"><p>Sales, Service dan Sparepart</p></a>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="asset/arrow.png" alt="" /></td>
+              <td>
+                <a href="#"><p>Booking Service</p></a>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="asset/arrow.png" alt="" /></td>
+              <td>
+                <a href="#"><p>Body Repair</p></a>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="asset/arrow.png" alt="" /></td>
+              <td>
+                <a href="#"><p>Tukar Tambah Semua Merk</p></a>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="asset/arrow.png" alt="" /></td>
+              <td>
+                <a href="#"><p>Free Test Drive</p></a>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="asset/arrow.png" alt="" /></td>
+              <td>
+                <a href="#"><p>Free Konsultan Otomotif</p></a>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Copyright &copy;2020 <span> Honda Bandung Center</span></p>
+        <p>Dealer Resmi Honda Bandung Jawa Barat</p>
+      </div>
+    </footer>
+    <!-- footer end -->
+  </body>
+  
+ 
+</html>
